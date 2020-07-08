@@ -1,0 +1,71 @@
+--[[                Thoranil            ]]--
+
+AIM:
+Roguelike, Roleplaying, Dungeoncrawler Minetest Subgame. Takes place almost exclusively in vertically stacked layers of dungeon.
+
+GAMEPLAY PARADIGMS:
+    - Playercount between 1 and 4
+    - No player experience/leveling system
+    - Procedurally Generated (or similar) vertically stacked dungeon realm
+
+
+INTENDED FEATURES:
+    - 21 different trapnodes
+    - 9 active baddies
+    - Feature-sprinkled dungeons
+    - Wholistic atmosphere
+    - Varying focus of challenge
+    - Adjustable difficulty
+    - 
+
+LIST OF CLASSES
+1.Knight
+2.Cleric
+3.Rogue
+4.Myrmidon
+5.Explorer
+6.Artificier
+7.Sage
+
+LIST OF STATS
+1.Strength
+2.Speed
+3.Defense
+4.Resistance
+5.Dexterity
+6.Potency
+7.Piety
+8.Alignment
+
+
+LIST OF BUFFS AND DEBUFFS:
+1.Regeneration
+2.Bleeding
+3.Poison
+4.Burning
+5.Paralysis
+6.Chill
+7.Frozen
+8.Inspired
+9.Dizzy
+10.Blighted
+11.Deep Blighted
+13.Encumbered
+14.Levitating
+15.Fleet of Foot
+16.Stun
+17.Fiery Blood
+18.Grip (less or more)
+19.
+20.
+21.
+22.
+23.
+24.
+25.
+26.
+
+
+STORY:
+
+
