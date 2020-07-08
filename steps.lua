@@ -23,6 +23,7 @@ minetest.register_on_joinplayer(function(player)
 
     -- Initial class choice assignment
     tho.f.stat_assign(player, "init", {class_choice = "myrmidon"})
+    tho.f.stat_set(player, "dex", tho.f.stat_get(player, "spd"))
 end)
 
 

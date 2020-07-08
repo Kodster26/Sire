@@ -1,3 +1,4 @@
+tho.stats.order = {str = 1, dex = 2, def = 3, res = 4, pot = 5, pie = 6, spd = 7, ali = 8}
 tho.stats.base = {
     -- Stats order: STR, DEX, DEF, RES, POT, PIE, SPD, ALI,
     classes = {
@@ -29,17 +30,28 @@ tho.f.stat_assign = function(player, reason, init) -- Mainly for initial assignm
     local new_stats = old_stats
     return player:set_properties(new_stats)
 end
------------------
+----------------------------------
 
--- Utility functions
-tho.stats.order = {str = 1, dex = 2, def = 3, res = 4, pot = 5, pie = 6, spd = 7, ali = 8}
+
+-- STAT UTILITY
+
+tho.f.stat_get = function(player, stat)
+    local player = tho.u.player(player)
+    local pstats = tho.u.dse(player:get_properties().infotext).stats
+    local rstat = stat and tho.stats.order[stat] or tho.u.err("Invalid stat_get parameter")
+    rstat = pstats[rstat]
+    return rstat
+end
+
 
 tho.f.stat_cycle = function(player)
 end
+----------------------------------
+
 
 -- STAT ALTERING
 
-tho.f.stat_alter = function(player, stat, value)
+tho.f.stat_set = function(player, stat, value)
     local stat = tho.stats.order[stat]
     local player = player
     local props = player:get_properties()

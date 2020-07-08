@@ -56,10 +56,10 @@ LIST OF BUFFS AND DEBUFFS:
 16.Stun
 17.Fiery Blood
 18.Grip (less or more)
-19.
-20.
-21.
-22.
+19.Clairvouyance
+20.Truesight
+21.Homing
+22.Spectral
 23.
 24.
 25.
