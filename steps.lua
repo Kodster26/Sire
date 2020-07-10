@@ -26,7 +26,8 @@ minetest.register_on_joinplayer(function(player)
     tho.f.stat_set(player, "dex", tho.f.stat_get(player, "spd"))
 
     -- Initial Effect testing
-    tho.f.assign_effect(player:get_player_name(), "test")
+   minetest.after(5, function () tho.f.assign_effect(player:get_player_name(), "test")
+    tho.f.assign_effect(player:get_player_name(), "test2") end)
 end)
 
 minetest.register_globalstep(function(dtime) 
