@@ -35,3 +35,26 @@ minetest.register_chatcommand("mydex", {
         return true
     end,
 })
+
+minetest.register_chatcommand("myeffects", {
+    privs = {
+        interact = true,
+    },
+    func = function(name, param)
+        
+        tho.u.sh(dump(tho.affected))
+    
+        return true
+    end,
+})
+minetest.register_chatcommand("effects", {
+    privs = {
+        interact = true,
+    },
+    func = function(name, param)
+        
+        tho.u.sh(dump(tho.effects))
+    
+        return true
+    end,
+})

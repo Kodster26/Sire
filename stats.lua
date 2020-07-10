@@ -25,6 +25,7 @@ tho.f.stat_assign = function(player, reason, init) -- Mainly for initial assignm
     local class = init and init.class_choice or "none"
     local class_stats = init and init.class_choice and tho.stats.base.classes[class]
     old_stats.infotext = tho.u.se({class = class, stats = class_stats})
+    old_stats.pointable = false
     else end
 
     local new_stats = old_stats
